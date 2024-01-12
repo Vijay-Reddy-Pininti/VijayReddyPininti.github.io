@@ -1,127 +1,429 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Pininti Vijay Reddy Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9e386ac8bf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.jpg" class="logo" />
+          <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1><span>Pininti Vijay Reddy</span></h1>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------about--------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Passionate and detail-oriented Computer Science Master's student
+              seeking a challenging summer 2024 internship to apply my skills in
+              software development and data analysis. Proficient in programming
+              languages like Java, Python, and C++, and experienced in AI and
+              machine learning projects. Eager to contribute innovative
+              solutions and grow professionally in a dynamic tech environment.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Programming Languages</span><br />Python, Java, C++, C
+                </li>
+                <li>
+                  <span>ML Libraries</span><br />Pandas, Nump, PyTorch,
+                  TensorFlow, Streamlit, scikit-learn, Seaborn, Matplotlib
+                </li>
+                <li><span>Web Development</span><br />HTML, CSS, JavaScript</li>
+                <li>
+                  <span>Data Formats and Transformations</span><br />JSON, XML,
+                  Dataweave
+                </li>
+                <li>
+                  <span>Frameworks and Technologies</span><br />Spring Boot,
+                  Django
+                </li>
+                <li><span>Architecture and Design</span><br />Microservices</li>
+                <li>
+                  <span>Database Management</span><br />MySQL, PostgresSQL
+                </li>
+                <li><span>Version Control</span><br />Git, Stash, BitBucket</li>
+                <li><span>CI/CD Tools</span><br />Jenkins</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <div class="skills-education-experience">
+                    <p><span>Capgemini</span>, Hyderabad, IN</p>
+                    <p class="skills-education-experience-p">
+                      <span>Sep 2021 - May 2023</span>
+                    </p>
+                  </div>
+                  <p style="color: white">
+                    <span>Senior Analyst</span>
+                  </p>
+                  <ul>
+                    <li>
+                      Implemented features such as client account creation,
+                      order processing, and payment options, along with
+                      developing ongoing email and SMS communication strategies
+                      for both Prepaid and Postpaid clients in Business Support
+                      Systems (BSS).
+                    </li>
+                    <li>
+                      Engineered an adaptive e-sim generator through the
+                      integration of Java and MuleSoft technologies
+                    </li>
+                    <li>
+                      Crafted and executed solutions for mobile number
+                      transferring (port-in and port-out) for a
+                      telecommunications client in Costa Rica.
+                    </li>
+                    <li>
+                      Developed a strategy to ensure application compatibility
+                      across both cloud-based and on-premises infrastructures.
+                    </li>
+                    <li>
+                      Successfully guided and supported approximately 70 junior
+                      professionals over a year, fostering their adaptation to
+                      and understanding of project goals and standards.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="skills-education-experience">
+                    <p><span>Capgemini</span>, Hyderabad, IN</p>
+                    <p class="skills-education-experience-p">
+                      <span>Sep 2020 - Sep 2021</span>
+                    </p>
+                  </div>
+                  <p style="color: white">
+                    <span>Analyst</span>
+                  </p>
+                  <ul>
+                    <li>
+                      Successfully engineered and implemented multiple key
+                      features, including the retrieval and updating of customer
+                      credit scores, extraction of customer debt amounts, and
+                      detailed analysis of customer-subscribed services,
+                      enhancing customer experience and operational efficiency.
+                    </li>
+                    <li>
+                      Initiated and led the automation of database modifications
+                      through REST API, achieving a significant reduction in
+                      manual labor by 30% and boosting overall productivity by
+                      25%.
+                    </li>
+                    <li>
+                      Developed and integrated a custom Maven archetype-based
+                      plugin, which dynamically generates project structures,
+                      resulting in a reduction of manual workload by at least
+                      20% and accelerating project development timelines.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="skills-education-experience">
+                    <p><span>Capgemini</span>, Hyderabad, IN</p>
+                    <p class="skills-education-experience-p">
+                      <span>Jan 2020 - May 2020</span>
+                    </p>
+                  </div>
+                  <p style="color: white">
+                    <span>Software Engineering Intern</span>
+                  </p>
+                  <ul>
+                    <li>
+                      Architected and engineered a dynamic API, capable of
+                      displaying comprehensive API data across both on-premise
+                      and cloud servers, enhancing data accessibility and system
+                      integration efficiency by 40%.
+                    </li>
+                    <li>
+                      Conceptualized and implemented a Mule application that
+                      ensures real-time synchronization between Salesforce
+                      Account and Contact objects and a MySQL database, with the
+                      capability of manual initiation or automated triggering
+                      via an event-based scheduler, improving data consistency
+                      and reducing synchronization time by 35%.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <div class="skills-education-experience">
+                    <p>
+                      <span> State University of NewYork at Buffalo</span>,
+                      Buffalo, NY
+                    </p>
+                    <p class="skills-education-experience-p">
+                      <span>2023 - Present </span>
+                    </p>
+                  </div>
+                  <p style="color: white">
+                    <span
+                      >Master of Science in Computer Science and
+                      Engineering</span
+                    >
+                  </p>
+                  <p>
+                    <strong style="color: white">Relevant Courses: </strong
+                    >Machine Learning, Deep Learning, Design and Analysis of
+                    Algorithms, Computer Security, Data Intensive Computing,
+                    Operating Systems, Data Model Query Language, Project
+                    Management
+                  </p>
+                </li>
+                <li>
+                  <div class="skills-education-experience">
+                    <p>
+                      <span> Vidya Jyothi Institute of Technology</span>,
+                      Hyderabad, IN
+                    </p>
+                    <p class="skills-education-experience-p">
+                      <span>2016 - 2020 </span>
+                    </p>
+                  </div>
+                  <p style="color: white">
+                    <span
+                      >Bachelor of Technology in Computer Science and
+                      Engineering</span
+                    >
+                  </p>
+                  <p>
+                    <strong style="color: white">Relevant Courses: </strong>Data
+                    Structures, Database Management Systems, Java Programming,
+                    Object Orientented Programming with C++, Web Technologies,
+                    Mobile Application Development, Cloud Computing
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+    <!-- ------------services------------------- -->
+    <!-- <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Project-1</h2>
+            <p>Description</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>Project-2</h2>
+            <p>Description</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fab fa-app-store"></i>
+            <h2>Project-3</h2>
+            <p>Description</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Pininti Vijay Reddy</h1>
-						<p>Full Stack Developer</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+    <!-- -----------------portfolio--------------- -->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/vehicle collision.jpg" />
+            <div class="layer">
+              <h3>
+                Enhancing Road Safety Through Predictive Modelling of Motor
+                Vehicle Collisions
+              </h3>
+              <p>
+                This project uses a predictive model to analyze motor vehicle
+                collisions, aiming to reduce accident rates by 25% and improve
+                road safety strategies.
+              </p>
+              <a
+                href="https://github.com/Vijay-Reddy-Pininti/Enhancing-Road-Safety-Through-Predictive-Modelling-of-Motor-Vehicle-Collisions.git"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/diamonds.png" />
+            <div class="layer">
+              <h3>
+                Diamond Price and Quality Prediction: A Comparative Regression
+                Analysis
+              </h3>
+              <p>
+                This project employs Linear and Ridge Regression to predict
+                diamond prices with a low Mean Squared Error (MSE) and also
+                predicts diamond quality using Logistic Regression
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/market.jpg" />
+            <div class="layer">
+              <h3>Market Exchange: An Online Trading Platform</h3>
+              <p>
+                This project revolutionizes digital marketplace interactions
+                with its Java-based, microservices architecture, enhancing
+                trading efficiency and user experience while significantly
+                reducing intermediary dependencies.
+              </p>
+              <a
+                href="https://github.com/Vijay-Reddy-Pininti/Market-Exchange-An-Online-Trading-Platform.git"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://github.com/Vijay-Reddy-Pininti?tab=repositories"
+          class="btn"
+          >See more</a
+        >
+      </div>
+    </div>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Pininti Vijay Reddy</a>
-					</header>
+    <!-- ------------contact------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="social-icons">
+              <a href="mailto:vijayred@buffalo.edu"
+                ><i class="fa-solid fa-inbox"></i
+              ></a>
+              <a href="tel:+14697737041"
+                ><i class="fa-solid fa-square-phone"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/pininti-vijay-reddy/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Vijay-Reddy-Pininti"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="images/Pininti Vijay Reddy Resume.pdf" class="btn btn2"
+              >Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="name" placeholder="Name" required />
+              <input type="email" name="email" placeholder="Email" required />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          © Pininti Vijay Reddy <br />
+          State University of NewYork at Buffalo
+        </p>
+      </div>
+    </div>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/pininti-vijay-reddy/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-							<li><a href="https://github.com/Vijay-Reddy-Pininti" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+    <!-- ------------script------------- -->
+    <script>
+      var tabLinks = document.getElementsByClassName("tab-links");
+      var tabContents = document.getElementsByClassName("tab-contents");
 
-				<!-- Main -->
-					<div id="main">
+      function openTab(tabName) {
+        for (tabLink of tabLinks) {
+          tabLink.classList.remove("active-link");
+        }
+        for (tabContent of tabContents) {
+          tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+      }
+    </script>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h3><a href="https://github.com/Vijay-Reddy-Pininti/Enhancing-Road-Safety-Through-Predictive-Modelling-of-Motor-Vehicle-Collisions.git">Enhancing Road Safety Through Predictive Modelling of Motor Vehicle Collisions</a></h3>
-									<p>This project aims to develop a predictive model using a motor vehicle collision dataset to accurately assess collision severity based on various contributing factors. The objectives include identifying key factors influencing crashes, pinpointing high-risk accident locations, analyzing the impact of driving behaviors on collision severity, investigating the relationship between vehicle types and collision severity, and assessing the significance of the time of day in influencing crash severity. Ultimately, this research will contribute valuable insights for enhancing road safety and accident prevention strategies. <br/>
-										<strong>Python, Numpy, Pandas, Scikitlearn, Seaborn, Matplot</strong>
-									</p>
-								</header>
-								<a href="https://github.com/Vijay-Reddy-Pininti/Enhancing-Road-Safety-Through-Predictive-Modelling-of-Motor-Vehicle-Collisions.git" class="image main"><img src="images/dataset-cover.png" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/Vijay-Reddy-Pininti/Enhancing-Road-Safety-Through-Predictive-Modelling-of-Motor-Vehicle-Collisions.git" class="button large">View Project</a></li>
-								</ul>
-							</article>
+    <script>
+      var sideMenu = document.getElementById("sideMenu");
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<h3><a href="https://github.com/Vijay-Reddy-Pininti/Logistic-Regression-From-Scratch">Logistic Regression From Scratch</a></h3>
-									</header>
-									<a href="https://github.com/Vijay-Reddy-Pininti/Logistic-Regression-From-Scratch" class="image fit"><img src="images/penguins.png" alt="" /></a>
-									<p>Implementing logistic regression from scratch on the penguins dataset involves statistically modeling the probability that a penguin belongs to a particular gender based on its features, using a sigmoid function for prediction, and optimizing the model coefficients through gradient descent to minimize the prediction error. <br/>
-										<strong>Python, Numpy, Pandas, Seaborn, Matplot</strong>
-									</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Vijay-Reddy-Pininti/Logistic-Regression-From-Scratch" class="button">Source Code</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h3><a href="https://github.com/Vijay-Reddy-Pininti/Linear-Regression-From-Scratch">Linear Regression From Scratch</a></h3>
-									</header>
-									<a href="https://github.com/Vijay-Reddy-Pininti/Linear-Regression-From-Scratch" class="image fit"><img src="images/diamonds.png" alt="" /></a>
-									<p>Implementing linear regression from scratch on the diamonds dataset involves developing a statistical model to predict diamond prices based on various features like carat, cut, and clarity, using Python for data handling and mathematical operations, and employing the ordinary least squares method for optimizing the model's coefficients. <br/>
-									   <strong>Python, Numpy, Pandas, Seaborn, Matplot</strong>
-									</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Vijay-Reddy-Pininti/Linear-Regression-From-Scratch" class="button">Source Code</a></li>
-									</ul>
-								</article>
-							</section>
-					</div>
+      function openMenu() {
+        sideMenu.style.right = "0";
+      }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>1400 Millersport Highway, The Triad Apt., Unit 202, Buffalo, NY 14221.</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">+1(469) 773-7041</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p>
-									<a href="mailto:vijayred@buffalo.edu">vijayred@buffalo.edu</a> <br>
-									<a href="mailto:pinintivijayreddy@outlook.com">pinintivijayreddy@outlook.com</a>
-								</p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/pininti-vijay-reddy/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-									<li><a href="https://github.com/Vijay-Reddy-Pininti" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+      function closeMenu() {
+        sideMenu.style.right = "-200px";
+      }
+    </script>
 
-			</div>
-			
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbx8put0gA5O0ursZshrPGki6rCV4D8MXa-rVy4ibdc3-asgdEEcK_OP544Ce8-jbv4R/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const mg = document.getElementById("msg");
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML =
+              "Your message has landed in our queue – we're mixing up a response and will get back to you shortly!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
 </html>
