@@ -20,11 +20,6 @@ body {
     background-image: url('images/background.png');
     background-size: cover;
     background-position: center;
-    transition: transform 0.5s ease-in;
-}
-
-#header:hover {
-    transform: scale(1.1);
 }
 
 .container {
